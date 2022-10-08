@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  #square
+  {
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  #triangle
+  {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+  }
+  #circle
+  {
+      width: 100px;
+      height: 100px;
+      background: red;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+  }
+  .container {
+      display: flex;
+     margin: 40px;
+      padding: 20px;
+      justify-content: space-evenly;
+  }
+  #list1,#list2
+  {
+      width: 110px;
+      alignment: center;
+  }
+#list,#button{
+    margin: 0px 0px 30px 650px;
+    font-size: larger;
+}
+#list1,#list2,button
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+</style>
+<body>
+<div class="container">
+<div id="square"></div>
+<div id="triangle"></div>
+<div id="circle"></div>
+
+</div>
+<div id="list">
+    <select onchange="color(this.options[selectedIndex], list2.options[list2.selectedIndex])" name="list1" id="list1">
+        <option value="green">green</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="pink">pink</option>
+        <option value="orange">orange</option>
+    </select>
+    <select name="list2" id="list2">
+        <option value="square">square</option>
+        <option value="circle">circle</option>
+        <option value="triangle">triangle</option>
+    </select>
+</div>
+<div id="button">
+    <a href="index.html"><button>К заданиям</button></a>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
