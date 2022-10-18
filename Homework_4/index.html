@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand">CURRENT WEATHER</a>
+            <form class="d-flex" role="search">
+                <input id="inp_city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="btn_search" onclick="start_search()" class="btn btn-outline-success" type="button">Search</button>
+
+            </form>
+        </div>
+    </nav>
+</header>
+<section id="section1">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p id="city">Moscow</p>
+                </div>
+            <div class="col-6">
+                <p id="date">14.10.2022</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p id="type" style="margin-top: 30px">Sunny</p>
+                </div>
+            </div>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-4" >
+                    <p><img id="image" src="info.ico" alt="image"></p>
+            </div>
+            <div class="col-4">
+                <p id="temp">18 </p>
+            </div>
+                   <div id="keydata" class="col-4">
+                       <div class="row">
+                           <div class="col-6">
+                               <p>MIN temperature</p>
+                               <p>MAX temperature</p>
+                               <p>Wind speed (km/h)</p>
+                           </div>
+                           <div class="col-6">
+                               <p id="min_t" style="text-align: left">+5</p>
+                               <p id="max_t" style="text-align: left">+15</p>
+                               <p id="wind" style="text-align: left">25</p>
+                           </div>
+                       </div>
+                   </div>
+        </div>
+    </div>
+</section>
+<section id="section2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p id="week">Hourly </p>
+            </div>
+        </div>
+        <div id="hour" class="row">
+            <div class="col">
+                <p id="dayOfWeek"> Monday</p>
+            </div>
+            <div class="col">
+                <p name = "time">9:00</p>
+            </div>
+            <div class="col">
+                <p name = "time">12:00</p>
+            </div>
+            <div class="col">
+                <p name = "time">15:00</p>
+            </div>
+            <div class="col">
+                <p name = "time">18:00</p>
+            </div>
+            <div class="col">
+                <p name = "time">21:00</p>
+            </div>
+            <div class="col">
+                <p name = "time">00:00</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+            <div class="col"><img name="image_week" src="info.ico" alt="image"></div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p id="_forecast">Forecast</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+            <div class="col">
+                <p name = "forecast_week">Wind</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p id="_temp">Temp(<sup>o</sup>C)</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+            <div class="col">
+                <p name = "temp_week">15</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p id="_wind">Wind (km/h) </p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+            <div class="col">
+                <p name = "wind_week">4</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</html>

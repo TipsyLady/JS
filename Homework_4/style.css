@@ -1,0 +1,43 @@
+#section1,#section2
+{
+    background: bisque;
+    padding-top: 30px;
+    margin: 20px 20px 20px 20px;
+    border: solid lightsalmon;
+    padding-bottom: 30px;
+}
+#date
+{
+    text-align: right;
+}
+#image
+{
+
+    width: 130px;
+    height: 130px;
+}
+#city,#date,#week
+{
+    font-weight: bolder;
+    color: lightseagreen;
+}
+#temp
+{
+
+    justify-content: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+#keydata
+{
+    text-align: right;
+}
+#hour,#type,#_forecast,#_temp,#_wind
+{
+    font-weight: bolder;
+}
+#hour p
+{
+margin-left: 15%;
+    font-style: italic;
+}
